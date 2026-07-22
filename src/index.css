@@ -1,19 +1,29 @@
-:root {
-    color-scheme: light dark;
-    background-color: #ffffff;
+@import "tailwindcss";
+
+@theme {
+  --color-base: #0E0D12;
+  --color-bone: #F1EEF2;
+  --color-purple-brand: #4B3A78;
+  --color-purple-secondary: #8A76C4;
+  --color-gold: #B08D57;
+  --color-graphite: #3A3840;
+  --color-muted: #B8B4C0;
+  --color-card-bg: #151319;
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 320px;
-    min-height: 100svh;
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    max-width: 100%;
-    overflow-x: hidden;
+  background-color: var(--color-base);
+  color: var(--color-bone);
+  font-family: var(--font-body);
+  margin: 0;
+  min-height: 100svh;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-purple-secondary);
+  outline-offset: 2px;
 }
