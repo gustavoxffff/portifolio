@@ -27,3 +27,18 @@ body {
   outline: 2px solid var(--color-purple-secondary);
   outline-offset: 2px;
 }
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--color-purple-brand);
+  color: var(--color-bone);
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.2s;
+}
+
+.skip-link:focus {
+  top: 0;
+}

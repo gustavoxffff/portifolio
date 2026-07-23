@@ -4,14 +4,62 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Portfólio — Developer</title>
+
+        <!-- SEO Meta Tags -->
+        <title>Gustavo | Developer — Web, Low-Level & AI Agents</title>
+        <meta name="description" content="Desenvolvedor full-stack especializado em web, programação de baixo nível e agentes de IA. Portfólio técnico com projetos reais." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://example.com" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Gustavo | Developer — Web, Low-Level & AI Agents" />
+        <meta property="og:description" content="Desenvolvedor full-stack especializado em web, programação de baixo nível e agentes de IA." />
+        <meta property="og:url" content="https://example.com" />
+        <meta property="og:site_name" content="Gustavo Dev Portfolio" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:image" content="https://example.com/og-image.png" />
+
+        <!-- Twitter Cards -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Gustavo | Developer — Web, Low-Level & AI Agents" />
+        <meta name="twitter:description" content="Desenvolvedor full-stack especializado em web, programação de baixo nível e agentes de IA." />
+        <meta name="twitter:image" content="https://example.com/og-image.png" />
+
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Inter:wght@400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+        <!-- Styles & Scripts -->
         <link rel="stylesheet" href="./src/index.css" />
         <script type="module" src="/src/main.ts"></script>
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Gustavo",
+            "jobTitle": "Full-Stack Developer",
+            "url": "https://example.com",
+            "sameAs": [
+                "https://github.com/username",
+                "https://linkedin.com/in/username"
+            ]
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Gustavo Dev Portfolio",
+            "url": "https://example.com"
+        }
+        </script>
     </head>
     <body>
-        <portfolio-app></portfolio-app>
+        <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+        <portfolio-app id="main-content"></portfolio-app>
     </body>
 </html>
